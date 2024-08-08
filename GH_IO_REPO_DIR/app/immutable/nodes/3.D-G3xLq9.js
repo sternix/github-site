@@ -1,0 +1,1 @@
+import{a as t,t as e,$ as r}from"../chunks/disclose-version.B_ubonKg.js";import{h as p}from"../chunks/svelte-head.UjcRriRT.js";var i=e("<h1>blog içerikleri</h1>");function l(o){var a=i();p(m=>{r.title="Blog"}),t(o,a)}export{l as component};

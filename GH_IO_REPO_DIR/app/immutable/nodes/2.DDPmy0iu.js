@@ -1,0 +1,1 @@
+import{f as e,s as o,a as s,t as n,$ as i}from"../chunks/disclose-version.B_ubonKg.js";import{h as f}from"../chunks/svelte-head.UjcRriRT.js";var m=n('<h1>Hoş geldiniz.</h1> <a href="/blog">Blog sayfam</a>',1);function g(t){var a=m();f(h=>{i.title="Anasayfa"});var r=e(a);o(o(r,!0)),s(t,a)}export{g as component};
