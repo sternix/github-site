@@ -9,9 +9,13 @@ const config = {
 	kit: {
 		// GitHub Pages cannot serve content from directories with special characters like underscores.
 		// Required as the default is _app
-		appDir: 'app', 
+		appDir: 'app',
+		output: {
+			bundleStrategy: 'single'
+		},
 		adapter: adapter({
-			fallback: 'index.html'
+			fallback: 'index.html',
+			strict: true
 		}),
 		// eğer subdir'dan çalışacaksa
 		paths: {
