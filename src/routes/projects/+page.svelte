@@ -43,8 +43,8 @@
 
     <div class="projects-grid">
         {#each projects as project}
-            <div class="project-card">
-                <div class="project-glass">
+            <div class="premium-card">
+                <div class="premium-glass">
                     <div class="project-top">
                         <svg
                             class="folder-icon"
@@ -134,35 +134,6 @@
         gap: 2rem;
     }
 
-    .project-card {
-        border-radius: 20px;
-        padding: 1px;
-        background: linear-gradient(
-            to bottom right,
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.01)
-        );
-        transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
-        height: 100%;
-    }
-
-    .project-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0, 210, 255, 0.15);
-    }
-
-    .project-glass {
-        background: rgba(20, 25, 33, 0.6);
-        backdrop-filter: blur(10px);
-        border-radius: 19px;
-        padding: 2rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
     .project-top {
         display: flex;
         justify-content: space-between;
@@ -191,7 +162,7 @@
         margin: 0 0 1rem 0;
     }
 
-    .project-card:hover .project-title {
+    .premium-card:hover .project-title {
         color: #00d2ff;
     }
 

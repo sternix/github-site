@@ -64,6 +64,37 @@
         box-sizing: border-box;
     }
 
+    :global(.premium-card) {
+        position: relative;
+        border-radius: 20px;
+        padding: 1px;
+        background: linear-gradient(
+            to bottom right,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.01)
+        );
+        transition:
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 0.4s;
+    }
+
+    :global(.premium-card:hover) {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    :global(.premium-glass) {
+        background: rgba(20, 25, 33, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 19px;
+        padding: 2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
     /* Ambient Background effect */
     .blob {
         position: fixed;

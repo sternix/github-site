@@ -9,8 +9,9 @@
     </header>
 
     <div class="about-grid">
-        <div class="about-content glass-card">
-            <h2>Kısaca Ben</h2>
+        <div class="premium-card">
+            <div class="premium-glass about-content">
+                <h2>Kısaca Ben</h2>
             <p>
                 Merhaba! Ben Sternix. Ağırlıklı olarak Linux sistemleri üzerinde çalışan, DevOps süreçlerine aşık ve açık kaynak teknolojilerini destekleyen bir teknoloji meraklısıyım. 
             </p>
@@ -29,11 +30,13 @@
                 <span class="skill-badge">Bash Scripting</span>
                 <span class="skill-badge">Nginx/HAProxy</span>
             </div>
+            </div>
         </div>
 
-        <div class="timeline glass-card">
-            <h2>Deneyimler</h2>
-            <div class="timeline-item">
+        <div class="premium-card">
+            <div class="premium-glass timeline">
+                <h2>Deneyimler</h2>
+                <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2023 - Günümüz</div>
                 <h3>Kıdemli DevOps Mühendisi</h3>
@@ -52,6 +55,7 @@
                 <div class="timeline-date">2019 - 2021</div>
                 <h3>Açık Kaynak Katkıcısı</h3>
                 <p>Çeşitli Linux araçlarına ve konteyner orkestrasyon araçlarına hata düzeltmeleri ve dokümantasyon desteği.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -86,14 +90,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-    }
-
-    .glass-card {
-        background: rgba(20, 25, 33, 0.4);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-        padding: 2.5rem;
     }
 
     h2 {

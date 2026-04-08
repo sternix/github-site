@@ -70,9 +70,6 @@
 </svelte:head>
 
 <main class="blog-container">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
 
     <header class="blog-header">
         <h1 class="glitch" data-text="Terminal & Kod">Terminal & Kod</h1>
@@ -94,8 +91,8 @@
 
     <div class="posts-grid">
         {#each filteredPosts as post (post.title)}
-            <article class="post-card">
-                <div class="post-glass">
+            <article class="premium-card">
+                <div class="premium-glass">
                     <div class="post-header">
                         <span
                             class="category-badge {post.category.toLowerCase()}"
@@ -135,55 +132,6 @@
         padding: 4rem 2rem;
         min-height: 100vh;
         z-index: 1;
-    }
-
-    /* Ambient Background effect */
-    .blob {
-        position: fixed;
-        border-radius: 50%;
-        filter: blur(80px);
-        z-index: -1;
-        opacity: 0.5;
-        animation: float 20s infinite ease-in-out alternate;
-    }
-
-    .blob-1 {
-        top: -10%;
-        left: -10%;
-        width: 50vw;
-        height: 50vw;
-        background: rgba(138, 43, 226, 0.15);
-    }
-
-    .blob-2 {
-        bottom: -20%;
-        right: -10%;
-        width: 60vw;
-        height: 60vw;
-        background: rgba(0, 210, 255, 0.1);
-        animation-delay: -5s;
-    }
-
-    .blob-3 {
-        top: 40%;
-        left: 50%;
-        width: 40vw;
-        height: 40vw;
-        background: rgba(43, 226, 138, 0.08);
-        animation-delay: -10s;
-        transform: translate(-50%, -50%);
-    }
-
-    @keyframes float {
-        0% {
-            transform: translate(0, 0) scale(1);
-        }
-        50% {
-            transform: translate(50px, 30px) scale(1.1);
-        }
-        100% {
-            transform: translate(-30px, 50px) scale(0.9);
-        }
     }
 
     /* Header & Typography */
@@ -241,42 +189,10 @@
         box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
     }
 
-    /* Post Grid */
     .posts-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         gap: 2rem;
-    }
-
-    .post-card {
-        position: relative;
-        border-radius: 20px;
-        padding: 1px;
-        background: linear-gradient(
-            to bottom right,
-            rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.01)
-        );
-        transition:
-            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-            box-shadow 0.4s;
-    }
-
-    .post-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    .post-glass {
-        background: rgba(20, 25, 33, 0.7);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border-radius: 19px;
-        padding: 2rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
     }
 
     .post-header {
@@ -322,7 +238,7 @@
         transition: color 0.3s;
     }
 
-    .post-card:hover .post-title {
+    .premium-card:hover .post-title {
         background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
         -webkit-background-clip: text;
         background-clip: text;
