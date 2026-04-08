@@ -54,7 +54,7 @@
         </h1>
         <div class="role-container">
             <span class="role-text"
-                >&gt; {roleText}<span class="cursor">_</span></span
+                ># {roleText}<span class="cursor">█</span></span
             >
         </div>
         <p class="description">

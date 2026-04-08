@@ -16,7 +16,7 @@
 
     <nav class="glass-nav">
         <div class="nav-content">
-            <a href="/" class="logo">&gt; sternix_</a>
+            <a href="/" class="logo"># sternix <span class="cursor">█</span></a>
             <div class="nav-links">
                 <a href="/" class={$page.url.pathname === "/" ? "active" : ""}
                     >Anasayfa</a
@@ -149,6 +149,18 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .logo .cursor {
+        display: inline-block;
+        width: 10px;
+        animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
     }
 
     .nav-links {
