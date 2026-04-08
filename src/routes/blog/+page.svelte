@@ -63,10 +63,6 @@
         name="description"
         content="Programlama, DevOps ve Linux sistem yönetimi üzerine teknik makaleler."
     />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet"
-    />
 </svelte:head>
 
 <main class="blog-container">

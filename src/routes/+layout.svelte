@@ -1,4 +1,11 @@
 <script>
+    import "@fontsource/outfit/300.css";
+    import "@fontsource/outfit/400.css";
+    import "@fontsource/outfit/600.css";
+    import "@fontsource/outfit/800.css";
+    import "@fontsource/jetbrains-mono/400.css";
+    import "@fontsource/jetbrains-mono/700.css";
+
     import favicon from "$lib/assets/favicon.svg";
     import { page } from "$app/stores";
     let { children } = $props();
