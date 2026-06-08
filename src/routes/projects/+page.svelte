@@ -60,6 +60,7 @@
                             ></path>
                         </svg>
                         <a
+                            title="github-link"
                             href="https://github.com/sternix/{project.github}"
                             target="_blank"
                             rel="noopener noreferrer"
